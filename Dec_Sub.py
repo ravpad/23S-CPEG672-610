@@ -68,7 +68,7 @@ def main(message):
               #print('Result: ' + translated)
               res=comparedict(translated.upper())
               #a.append([])
-              print("Plain Text:",translated.upper())
+              print("Plaintext:",translated.upper())
               print("Score",res)
               #for j in range(2):
                 #print(i)
@@ -78,10 +78,15 @@ def main(message):
         print("*" * 30)
         a.sort(reverse=True)
         for i in range(10):
-            print("Score:",a[i][0])
-            print("Final Key:",a[i][1])
-            print("Final Plain Text:",a[i][2])
-            
+            print(a[i])
+        
+        print()
+        print()
+        print('*' * 80)
+        print("Final Score:",a[0][0])
+        print("Final Key:",a[0][1])
+        print("Final Plain Text:",a[0][2])
+        print('*' * 80) 
 
         
 def comparedict(txt):
@@ -142,6 +147,6 @@ def getRandomKey():
 
 if __name__ == '__main__':
     message = 'zdjehypkhpoybpjfpevpasnxahfyoopehakhdspjfpwndktewfyhffpsepoxykxoyhjeyjwaejfpzpejnxjyupeyjwaejfpwnsejnxjyupeyjwaejfpampnxwyetnuyjwaejfpampnxxnnoyefkpeeyjwaejfppvnhfnxzpoypxyjwaejfppvnhfnxykhsptdoyjqyjwaejfpepaenknxoymfjyjwaejfpepaenknxtasbkpeeyjwaejfpevsykmnxfnvpyjwaejfpwykjpsnxtpevayswpfatprpsqjfykmzpxnspdewpfatknjfykmzpxnspdewpwpspaoomnykmtysphjjnfparpkwpwpspaoomnykmtysphjjfpnjfpswaqykefnsjjfpvpsyntwaeenxasoybpjfpvspepkjvpsyntjfajenupnxyjeknyeypejadjfnsyjypeykeyejptnkyjezpykmsphpyrptxnsmnntnsxnspryoykjfpedvpsoajyrptpmsppnxhnuvasyenknkoqauyktkppteznnbeaeaewnstkppteawfpjejnkpyxyjyejnbppvyjeptmp'
-    print("Cipher Text",message)
+    print("Ciphertext",message)
     key(message)
     main(message)
